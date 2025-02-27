@@ -15,8 +15,8 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "JJException"
-  s.version      = "0.2.13"
+  s.name         = "JJException-fyFork"
+  s.version      = "0.0.1"
   s.summary      = "Handle the objective-c crash exception."
 
   # This description is used to generate tags and improve search results.
@@ -52,7 +52,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "李杰" => "lijie250@gmail.com" }
+  s.author             = { "feiyu002" => "pang_fengyue@126.com" }
   # Or just: s.author    = "李杰"
   # s.authors            = { "李杰" => "jezz.li@hujiang.com" }
   # s.social_media_url   = "http://twitter.com/李杰"
@@ -69,9 +69,6 @@ Pod::Spec.new do |s|
 
   #  When using multiple platforms
   s.ios.deployment_target = "8.0"
-  s.osx.deployment_target = "10.8"
-  s.watchos.deployment_target = "2.0"
-  s.tvos.deployment_target = "9.0"
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -80,7 +77,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/jezzmemo/JJException.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/feiyu002/JJException-fyFork.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -103,6 +100,7 @@ Pod::Spec.new do |s|
   s.subspec 'ARC' do |spec|
     spec.requires_arc = true
     spec.source_files  = "JJException/Source/ARC/*.{h,m}"
+    spec.resource_bundles = {'JJException-fyFork' => ['JJException/Source/Resources/PrivacyInfo.xcprivacy']}
     spec.dependency 'JJException/Swizzle'
     spec.dependency 'JJException/Main'
     spec.dependency 'JJException/DeallocBlock'
@@ -111,17 +109,20 @@ Pod::Spec.new do |s|
   s.subspec 'Swizzle' do |spec|
     spec.requires_arc = true
     spec.source_files  = "JJException/Source/Swizzle/*.{h,m}"
+    spec.resource_bundles = {'JJException-fyFork' => ['JJException/Source/Resources/PrivacyInfo.xcprivacy']}
   end
 
   s.subspec 'Main' do |spec|
     spec.requires_arc = true
     spec.public_header_files = "JJException/Source/Main/JJException.h"
     spec.source_files  = "JJException/Source/Main/*.{h,m}"
+    spec.resource_bundles = {'JJException-fyFork' => ['JJException/Source/Resources/PrivacyInfo.xcprivacy']}
   end
 
   s.subspec 'MRC' do |spec|
     spec.requires_arc = false
     spec.source_files  = "JJException/Source/MRC/*.{h,m}"
+    spec.resource_bundles = {'JJException-fyFork' => ['JJException/Source/Resources/PrivacyInfo.xcprivacy']}
     spec.dependency 'JJException/Swizzle'
     spec.dependency 'JJException/Main'
   end
@@ -129,6 +130,7 @@ Pod::Spec.new do |s|
   s.subspec 'DeallocBlock' do |spec|
     spec.requires_arc = true
     spec.source_files  = "JJException/Source/DeallocBlock/*.{h,m}"
+    spec.resource_bundles = {'JJException-fyFork' => ['JJException/Source/Resources/PrivacyInfo.xcprivacy']}
   end
 
   #s.source_files  = "JJException/Source/*.{h,m}"

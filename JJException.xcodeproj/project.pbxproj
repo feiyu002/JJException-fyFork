@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04563F1D2D6F190C00857BE8 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 04563F1B2D6F190C00857BE8 /* PrivacyInfo.xcprivacy */; };
+		04563F1E2D6F190C00857BE8 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 04563F1B2D6F190C00857BE8 /* PrivacyInfo.xcprivacy */; };
 		61025B4D2153E36100191522 /* NSAttributedString+AttributedStringHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 61025B4C2153E36100191522 /* NSAttributedString+AttributedStringHook.m */; };
 		61025B502153E58F00191522 /* NSMutableAttributedString+MutableAttributedStringHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 61025B4F2153E58F00191522 /* NSMutableAttributedString+MutableAttributedStringHook.m */; };
 		61025B6921563A6400191522 /* NSObject+DeallocBlock.h in Sources */ = {isa = PBXBuildFile; fileRef = 613E0AAB214FF41B00B8D0DF /* NSObject+DeallocBlock.h */; };
@@ -86,6 +88,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04563F1B2D6F190C00857BE8 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		61025B4B2153E36100191522 /* NSAttributedString+AttributedStringHook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+AttributedStringHook.h"; sourceTree = "<group>"; };
 		61025B4C2153E36100191522 /* NSAttributedString+AttributedStringHook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+AttributedStringHook.m"; sourceTree = "<group>"; };
 		61025B4E2153E58F00191522 /* NSMutableAttributedString+MutableAttributedStringHook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+MutableAttributedStringHook.h"; sourceTree = "<group>"; };
@@ -171,6 +174,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04563F1C2D6F190C00857BE8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04563F1B2D6F190C00857BE8 /* PrivacyInfo.xcprivacy */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		61025B5D215639B700191522 /* JJExceptionCarthage */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +236,7 @@
 		61196D5B20F263F200022DDC /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				04563F1C2D6F190C00857BE8 /* Resources */,
 				613E0AAA214FF41B00B8D0DF /* DeallocBlock */,
 				613E0A8921496ED100B8D0DF /* Main */,
 				61A7F5572144ED9C00C87FA1 /* ARC */,
@@ -429,6 +441,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04563F1E2D6F190C00857BE8 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +451,7 @@
 			files = (
 				61196D5220F261CC00022DDC /* LaunchScreen.storyboard in Resources */,
 				61196D4F20F261CC00022DDC /* Assets.xcassets in Resources */,
+				04563F1D2D6F190C00857BE8 /* PrivacyInfo.xcprivacy in Resources */,
 				61196D4D20F261C800022DDC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
